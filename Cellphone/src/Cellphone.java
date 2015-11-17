@@ -3,8 +3,38 @@
 
 	String marke;
 	String modell;
-	int seriennummer;
+	String seriennummer;
 	int preis;
+	
+
+	public Cellphone( String marke, String modell, String seriennummer, int preis)
+	{
+		this.marke = marke;
+		this.modell = modell;
+		this.seriennummer = seriennummer;
+		this.preis = preis;
+
+	}
+	
+	//public Cellphone() {
+	//	super();
+	//}
+
+	public void setMarke(String marke) {
+		this.marke = marke;
+	}
+
+	public void setModell(String modell) {
+		this.modell = modell;
+	}
+
+	public void setSeriennummer(String seriennummer) {
+		this.seriennummer = seriennummer;
+	}
+
+	public void setPreis(int preis) {
+		this.preis = preis;
+	}
 
 	String getMarke(){
 			return marke;
@@ -14,7 +44,7 @@
 		return modell;
 	}
 	
-	int getSeriennummer(){
+	String getSeriennummer(){
 		return seriennummer;
 	}
 
@@ -23,12 +53,9 @@
 	}
 	
 
-	public Cellphone() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public void print() {
-	System.out.println("Marke: " + marke + "  Modell: " + modell + "  Seriennummer: " + seriennummer + "  Preis: " + preis + "€");	
+	System.out.println("Marke: " + this.marke + "  Modell: " + this.modell + "  Seriennummer: " + this.seriennummer + "  Preis: " + this.preis + "€");	
 	}
 	}
+	
 	
