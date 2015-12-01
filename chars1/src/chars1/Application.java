@@ -7,7 +7,7 @@ public class Application {
 
 		
 		CharChecker cc = new CharChecker();
-		String toCheck = "fsfsfsfaaaa";
+		String toCheck = "praktikum";
 		
 		char[] charArray = cc.toArray(toCheck);
 		cc.printArray(charArray);
