@@ -7,9 +7,10 @@ public class Application {
 
 		
 		CharChecker cc = new CharChecker();
-		String toCheck = "fsfsfsf";
+		String toCheck = "fsfsfsfaaaa";
 		
-		cc.iterate(toCheck);
+		char[] charArray = cc.toArray(toCheck);
+		cc.printArray(charArray);
 	}
 
 }
