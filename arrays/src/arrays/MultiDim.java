@@ -4,6 +4,9 @@ public class MultiDim {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		MultiDim multi = new MultiDim();
+		multi.print2D(multi.get2D(6, 6));
 	}
 		public int[][] get2D(int rows, int columns) {
 			
