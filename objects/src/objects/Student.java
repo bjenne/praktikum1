@@ -1,16 +1,20 @@
 package objects;
 
-public class Student {
+public class Student extends Person{
 
-	String name;
-	Integer age;
+	String studienfach;
 
-
-	String getName() {
-	return name;
-
+	public Student (String vorname, String nachname, Integer alter, String studienfach){
+		super(vorname, nachname, alter);
+		this.studienfach = studienfach;
 	}
-	Integer getAge(){
-		return age;
+	
+	
+	String getStudienfach(){
+		return studienfach;
+	}
+	
+	public void setStudienfach(String studienfach){
+		this.studienfach = studienfach;
 	}
 }
